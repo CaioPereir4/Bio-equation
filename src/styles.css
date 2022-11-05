@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Playfair';
+  src: url('/assets/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+  --primary: #038C7F;
+  --secondary: #027373;
+  --pading:15px;
+  --cinza: #405040;
+  --cinza-claro:#dedede;
+
+}
+
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+color: inherit;
+}
+
+.container{
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2{
+  font-family: 'Playfair';
+}
+body{
+  background-color: rgb(240, 240, 240);
+  }
+
+  p{
+    margin: 10px;
+    font-size: 17px;
+  }

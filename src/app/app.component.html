@@ -1,0 +1,12 @@
+<body>
+<header>
+  <a ><h2>Bio-Equation</h2></a>
+  <a><h2>Calculadora equações de segundo grau.</h2></a>
+</header>
+<main>
+<app-insert-number (aoCalcular)="exportar($event)"></app-insert-number>
+<br>
+<app-resultado [resultado]="resultado"  id="app-resultado" *ngIf="numberCheck === 1 && resultado.delta >=0"></app-resultado>
+
+</main>
+</body>

@@ -1,0 +1,16 @@
+<section class="container">
+  <main class="mostrar-resultado">
+  <p>Fórmula : Δ = b² - 4.a.c</p>
+  <p>Δ = {{resultado?.valorB}}² - 4 . {{resultado?.valorA}} . {{resultado?.valorC}}</p>
+  <p>Δ = {{resultado?.delta}}</p>
+  <br>
+  <p>x' = (-b + √Δ)/2.a</p>
+  <p>x' = (-({{resultado?.valorB}}) + √{{resultado?.delta}})/2.{{resultado?.valorA}}</p>
+  <p>x' = {{resultado?.raizA}}</p>
+  <br>
+  <p>x'' = (-b - √Δ)/2.a</p>
+  <p>x'' = (-({{resultado?.valorB}}) - √{{resultado?.delta}})/2.{{resultado?.valorA}}</p>
+  <p>x'' = {{resultado?.raizB}}</p>
+  </main>
+
+</section>

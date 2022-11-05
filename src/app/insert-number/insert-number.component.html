@@ -1,0 +1,23 @@
+<section class="container">
+  <form class="formulario" (ngSubmit)="calcular()">
+    <h2 class="formulario-titulo">Digite os valores: </h2>
+    <p>Exemplo: ax² + bx + c = 0</p>
+    <div class="form-field">
+      <label class="field-label" for="a" >A: </label>
+      <input class="field-input" type="number" id="numberA"  name="numberA" [(ngModel)]="valorA">
+    </div>
+    <div class="form-field">
+      <label class="field-label" for="a">B: </label>
+      <input class="field-input" type="number" id="numberB"  name="numberB" [(ngModel)]="valorB">
+    </div>
+    <div class="form-field">
+      <label class="field-label" for="c">C: </label>
+      <input class="field-input" type="number" id="numberC"  name="numberC" [(ngModel)]="valorC">
+    </div>
+    <div class="botao-wrapper">
+      <button class="botao" type="submit">Calcular</button>
+    </div>
+    <p>{{resultado?.resultado}} </p>
+    
+  </form>
+</section>

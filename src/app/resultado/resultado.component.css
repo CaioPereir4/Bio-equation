@@ -1,0 +1,13 @@
+.mostrar-resultado{
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+  width: 100%;
+
+}
+
+
+a:hover{
+  cursor: pointer;
+  text-align: center;
+}

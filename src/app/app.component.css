@@ -1,0 +1,28 @@
+header{
+  background-image: linear-gradient( to left,#027373,#038C7F);
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+a:hover{
+  color: gray;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+h2{
+  font-size: 21px;
+  padding: 10px;
+}
+
+p{
+  margin: 10px;
+}
+
