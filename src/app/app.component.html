@@ -6,7 +6,7 @@
 <main>
 <app-insert-number (aoCalcular)="exportar($event)"></app-insert-number>
 <br>
-<app-resultado [resultado]="resultado"  id="app-resultado" *ngIf="numberCheck === 1 && resultado.delta >=0"></app-resultado>
-
+<app-resultado [resultado]="resultado"  id="app-resultado" *ngIf="numberCheck === 1 && resultado.delta >=0 && resultado.valorA > 0 "></app-resultado>
+<footer><p>Criado por Caio Pereira. <a>https://github.com/CaioPereir4</a></p></footer>
 </main>
 </body>

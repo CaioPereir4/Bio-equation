@@ -14,12 +14,12 @@ export class CalcularService {
     let raizA;
     let raizB;
 
-       if (this.delta>0){
+       if (this.delta>0 && a > 0){
           raizA = ((-b + Math.sqrt(this.delta) )/(2*a)).toFixed(4);
           raizB  = ((-b - Math.sqrt(this.delta) )/(2*a)).toFixed(4);
           return this.resultado = {'resultado':`Resultado: ${raizA} e ${raizB}`,'delta':this.delta,'raizA':raizA, 'raizB':raizB
           ,'valorA':a, 'valorB':b,'valorC':c}
-       }else if (this.delta==0){
+       }else if (this.delta==0 && a > 0){
           raizA = (-b + Math.sqrt(this.delta) )/(2*a);
           return this.resultado = {'resultado':`Resultado: ${raizA} e ${raizA}`,'delta':this.delta,'raizA':raizA, 'raizB':raizA
           ,'valorA':a, 'valorB':b,'valorC':c}
