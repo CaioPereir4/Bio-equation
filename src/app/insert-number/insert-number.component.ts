@@ -11,17 +11,13 @@ import { Component, EventEmitter, Output } from "@angular/core";
 export class InsertNumberComponent{
 
   @Output() aoCalcular = new EventEmitter<any>();
-  @Output() Passos = new EventEmitter<any>();
   valorA:number;
   valorB:number;
   valorC:number;
   resultado:any;
   constructor(private service: CalcularService) { }
 
-
-
   calcular(){
-    console.log("passei aq")
    if(this.valorA === undefined|| this.valorB === undefined || this.valorC === undefined){
      alert("Preencha todos os campos")
     } else if(this.valorA === 0 && this.valorB === 0 && this.valorC === 0){
@@ -31,7 +27,7 @@ export class InsertNumberComponent{
 
     this.service.calcularEquationSecond(this.valorA,this.valorB,this.valorC);
     this.resultado = this.service.mostrarResultado();
-    // this.limparCampos();
+    this.limparCampos();
     this.aoCalcular.emit(this.resultado)
     }
     return this.resultado
